@@ -597,8 +597,14 @@
             </div>
          </div>
       </section>
-   <section class="case-section" id="case-studies-sec">
 
+  <section class="case-section">
+  <div class="container">
+    <div class="title-area text-center">
+      <span class="sub-title">Proven Use Cases</span>
+      <h2 class="sec-title">Recent Case Studies</h2>
+    </div>
+  </div>
   <div class="case-wrapper">
     <div class="case-container">
 
@@ -691,7 +697,6 @@
     </div>
   </div>
 
-</section>
 </section>
       <div class="overflow-hidden">
          <div class="container">
@@ -1299,39 +1304,71 @@
 const section = document.querySelector(".case-section");
 const container = document.querySelector(".case-container");
 
-function getScrollAmount() {
-  return container.scrollWidth - window.innerWidth;
-}
+if (section && container) {
+  const getScrollAmount = () => Math.max(0, container.scrollWidth - window.innerWidth);
+  let horizontalTween = null;
+  let cardTriggers = [];
+  let resizeTimer = null;
 
-gsap.to(container, {
-  x: () => -getScrollAmount(),
-  ease: "none",
-  scrollTrigger: {
-    trigger: section,
-    start: "top top",
-    end: () => "+=" + getScrollAmount(),  // ✅ FIXED
-    scrub: 1.2,
-    pin: true,
-    anticipatePin: 1,
-    invalidateOnRefresh: true
-  }
-});
-
-/* Content animations */
-gsap.utils.toArray(".case-card").forEach(card => {
-
-  gsap.from(card.querySelector(".case-content"), {
-    y: 80,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-      trigger: card,
-      containerAnimation: ScrollTrigger.getAll()[0],
-      start: "left center"
+  const initCaseStickyScroll = () => {
+    if (horizontalTween) {
+      horizontalTween.scrollTrigger.kill();
+      horizontalTween.kill();
     }
-  });
+    cardTriggers.forEach((trigger) => trigger.kill());
+    cardTriggers = [];
 
-});
+    const scrollAmount = getScrollAmount();
+
+    if (scrollAmount <= 0 || window.innerWidth < 992) {
+      gsap.set(container, { clearProps: "transform" });
+      return;
+    }
+
+    horizontalTween = gsap.to(container, {
+      x: () => -getScrollAmount(),
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
+        start: "top top",
+        end: () => "+=" + getScrollAmount(),
+        scrub: 1.1,
+        pin: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true
+      }
+    });
+
+    gsap.utils.toArray(".case-card").forEach((card) => {
+      const content = card.querySelector(".case-content");
+      if (!content) return;
+
+      const contentTween = gsap.from(content, {
+        y: 64,
+        opacity: 0,
+        duration: 0.9,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: card,
+          containerAnimation: horizontalTween,
+          start: "left 70%"
+        }
+      });
+      if (contentTween.scrollTrigger) {
+        cardTriggers.push(contentTween.scrollTrigger);
+      }
+    });
+  };
+
+  initCaseStickyScroll();
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      initCaseStickyScroll();
+      ScrollTrigger.refresh();
+    }, 150);
+  });
+}
 // init case studies horizontal swiper on page load
 if (typeof Swiper !== 'undefined') {
   document.addEventListener('DOMContentLoaded', function() {
