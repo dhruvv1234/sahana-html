@@ -1,0 +1,194 @@
+body.premium-gold.mono-gold {
+  --theme-color: #c8a24a;
+  --theme-color2: #e8d6a3;
+  --title-color: #f5f5f5;
+  --body-color: #c7c7c7;
+  --smoke-color2: #1a1a1a;
+  --th-border-color: rgba(200, 162, 74, 0.34);
+  --title-font: "Plus Jakarta Sans", sans-serif;
+  --title-font2: "Plus Jakarta Sans", sans-serif;
+  --body-font: "Manrope", sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(200, 162, 74, 0.16), transparent 34%),
+    radial-gradient(circle at 84% 22%, rgba(255, 255, 255, 0.07), transparent 28%),
+    linear-gradient(150deg, #0a0a0a 0%, #171717 52%, #0d0d0d 100%);
+  color: var(--body-color);
+}
+
+body.premium-gold.mono-gold #preloader .preloader-bg {
+  background: #050505;
+}
+
+body.premium-gold.mono-gold .menu-area {
+  background: rgba(20, 20, 20, 0.84);
+  border: 1px solid rgba(200, 162, 74, 0.34);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+body.premium-gold.mono-gold .sticky-wrapper.sticky .menu-area {
+  border-color: rgba(200, 162, 74, 0.52);
+}
+
+body.premium-gold.mono-gold .main-menu>ul>li>a,
+body.premium-gold.mono-gold .th-mobile-menu ul li a,
+body.premium-gold.mono-gold .sub-title,
+body.premium-gold.mono-gold p,
+body.premium-gold.mono-gold .box-text,
+body.premium-gold.mono-gold .checklist li,
+body.premium-gold.mono-gold .footer-layout1 p,
+body.premium-gold.mono-gold .footer-layout1 a,
+body.premium-gold.mono-gold .footer-layout1 li,
+body.premium-gold.mono-gold .footer-layout1 .widget_title {
+  color: #d8d8d8 !important;
+}
+
+body.premium-gold.mono-gold h1,
+body.premium-gold.mono-gold h2,
+body.premium-gold.mono-gold h3,
+body.premium-gold.mono-gold h4,
+body.premium-gold.mono-gold h5,
+body.premium-gold.mono-gold h6,
+body.premium-gold.mono-gold .sec-title,
+body.premium-gold.mono-gold .hero-title {
+  color: #ffffff !important;
+  letter-spacing: -0.02em;
+}
+
+body.premium-gold.mono-gold .th-btn,
+body.premium-gold.mono-gold .gold-btn {
+  background: linear-gradient(135deg, #c8a24a, #9d7728);
+  border: 1px solid #8f6a20;
+  box-shadow: 0 12px 28px rgba(118, 86, 23, 0.32);
+  color: #ffffff !important;
+}
+
+body.premium-gold.mono-gold .th-btn:hover,
+body.premium-gold.mono-gold .gold-btn:hover {
+  background: linear-gradient(135deg, #ae8630, #845f17);
+}
+
+body.premium-gold.mono-gold .th-btn .icon img,
+body.premium-gold.mono-gold .th-btn img {
+  filter: brightness(0) invert(1);
+}
+
+body.premium-gold.mono-gold .hero-style1,
+body.premium-gold.mono-gold .service-card,
+body.premium-gold.mono-gold .integration-card,
+body.premium-gold.mono-gold .price-box,
+body.premium-gold.mono-gold .testi-card,
+body.premium-gold.mono-gold .blog-card,
+body.premium-gold.mono-gold .case-card,
+body.premium-gold.mono-gold .counter-card,
+body.premium-gold.mono-gold .process-item,
+body.premium-gold.mono-gold .cta-area2 {
+  background: linear-gradient(150deg, rgba(23, 23, 23, 0.94), rgba(9, 9, 9, 0.9));
+  border: 1px solid rgba(200, 162, 74, 0.26);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.34);
+}
+
+body.premium-gold.mono-gold .service-card:hover,
+body.premium-gold.mono-gold .integration-card:hover,
+body.premium-gold.mono-gold .price-box:hover,
+body.premium-gold.mono-gold .testi-card:hover,
+body.premium-gold.mono-gold .blog-card:hover,
+body.premium-gold.mono-gold .case-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 26px 48px rgba(0, 0, 0, 0.42);
+}
+
+body.premium-gold.mono-gold .hero-style1::before {
+  background: linear-gradient(115deg, rgba(10, 10, 10, 0.8), rgba(30, 30, 30, 0.4) 45%, rgba(200, 162, 74, 0.2));
+}
+
+body.premium-gold.mono-gold .case-content .meta>div {
+  background: rgba(17, 17, 17, 0.75);
+  border: 1px solid rgba(200, 162, 74, 0.22);
+}
+
+body.premium-gold.mono-gold .case-content .label {
+  color: #a3a3a3;
+}
+
+body.premium-gold.mono-gold .case-content .value,
+body.premium-gold.mono-gold .case-industry,
+body.premium-gold.mono-gold .checklist li::before,
+body.premium-gold.mono-gold .cta-list li i,
+body.premium-gold.mono-gold .rating i,
+body.premium-gold.mono-gold .blog-card .cat {
+  color: #d1ad57 !important;
+}
+
+body.premium-gold.mono-gold #testi-sec,
+body.premium-gold.mono-gold #blog-sec {
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+}
+
+body.premium-gold.mono-gold .counter-area {
+  border-radius: 24px;
+  border: 1px solid rgba(200, 162, 74, 0.2);
+  padding: 16px;
+  background: linear-gradient(130deg, rgba(10, 10, 10, 0.86), rgba(24, 24, 24, 0.86));
+}
+
+body.premium-gold.mono-gold .cta-area2::before {
+  background: linear-gradient(90deg, rgba(9, 9, 9, 0.92) 0%, rgba(22, 22, 22, 0.8) 56%, rgba(22, 22, 22, 0.18) 84%);
+}
+
+body.premium-gold.mono-gold .cta-area2 .sec-title,
+body.premium-gold.mono-gold .cta-area2 .box-text,
+body.premium-gold.mono-gold .cta-area2 li {
+  color: #f4f4f4 !important;
+}
+
+body.premium-gold.mono-gold .footer-layout1::before {
+  background: linear-gradient(165deg, rgba(4, 4, 4, 0.97), rgba(14, 14, 14, 0.96));
+}
+
+body.premium-gold.mono-gold .newsletter-form .form-control {
+  background: rgba(16, 16, 16, 0.58);
+  border-color: rgba(200, 162, 74, 0.6);
+  color: #f0f0f0;
+}
+
+body.premium-gold.mono-gold .newsletter-form .form-control::placeholder {
+  color: rgba(210, 210, 210, 0.76);
+}
+
+body.premium-gold.mono-gold .scroll-top {
+  background: #0a0a0a;
+  border-color: #c8a24a;
+}
+
+body.premium-gold.mono-gold .scroll-top svg path {
+  stroke: #c8a24a;
+}
+
+body.premium-gold.mono-gold .hero-style1,
+body.premium-gold.mono-gold .service-card,
+body.premium-gold.mono-gold .integration-card,
+body.premium-gold.mono-gold .price-box,
+body.premium-gold.mono-gold .testi-card,
+body.premium-gold.mono-gold .blog-card,
+body.premium-gold.mono-gold .case-card {
+  animation: monoFloat 8s ease-in-out infinite;
+}
+
+@keyframes monoFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 991px) {
+  body.premium-gold.mono-gold .menu-area {
+    border-radius: 14px;
+  }
+
+  body.premium-gold.mono-gold .hero-style1,
+  body.premium-gold.mono-gold .cta-area2,
+  body.premium-gold.mono-gold .case-card {
+    border-radius: 18px;
+  }
+}

@@ -1,0 +1,190 @@
+body.premium-gold.aurora-noir {
+  --theme-color: #00b7ff;
+  --theme-color2: #54f0c8;
+  --title-color: #e8f6ff;
+  --body-color: #b8c9d8;
+  --smoke-color2: #0d1a2d;
+  --th-border-color: rgba(120, 180, 220, 0.35);
+  --title-font: "Plus Jakarta Sans", sans-serif;
+  --title-font2: "Plus Jakarta Sans", sans-serif;
+  --body-font: "Manrope", sans-serif;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(0, 183, 255, 0.2), transparent 32%),
+    radial-gradient(circle at 82% 24%, rgba(84, 240, 200, 0.16), transparent 28%),
+    linear-gradient(145deg, #050b16 0%, #08162a 45%, #061a1f 100%);
+  color: var(--body-color);
+}
+
+body.premium-gold.aurora-noir #preloader .preloader-bg {
+  background: #041325;
+}
+
+body.premium-gold.aurora-noir .menu-area {
+  background: rgba(9, 22, 42, 0.78);
+  border: 1px solid rgba(96, 168, 214, 0.35);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+body.premium-gold.aurora-noir .sticky-wrapper.sticky .menu-area {
+  border-color: rgba(84, 240, 200, 0.46);
+}
+
+body.premium-gold.aurora-noir .main-menu>ul>li>a,
+body.premium-gold.aurora-noir .th-mobile-menu ul li a,
+body.premium-gold.aurora-noir .sub-title,
+body.premium-gold.aurora-noir p,
+body.premium-gold.aurora-noir .box-text,
+body.premium-gold.aurora-noir .checklist li,
+body.premium-gold.aurora-noir .footer-layout1 p,
+body.premium-gold.aurora-noir .footer-layout1 a,
+body.premium-gold.aurora-noir .footer-layout1 li,
+body.premium-gold.aurora-noir .footer-layout1 .widget_title {
+  color: #d2e3ef !important;
+}
+
+body.premium-gold.aurora-noir h1,
+body.premium-gold.aurora-noir h2,
+body.premium-gold.aurora-noir h3,
+body.premium-gold.aurora-noir h4,
+body.premium-gold.aurora-noir h5,
+body.premium-gold.aurora-noir h6,
+body.premium-gold.aurora-noir .sec-title,
+body.premium-gold.aurora-noir .hero-title {
+  color: #eff9ff !important;
+  letter-spacing: -0.02em;
+}
+
+body.premium-gold.aurora-noir .th-btn,
+body.premium-gold.aurora-noir .gold-btn {
+  background: linear-gradient(135deg, #00b7ff, #00d3a9);
+  border: 1px solid rgba(134, 241, 255, 0.7);
+  box-shadow: 0 12px 28px rgba(0, 159, 204, 0.35);
+  color: #041325 !important;
+}
+
+body.premium-gold.aurora-noir .th-btn:hover,
+body.premium-gold.aurora-noir .gold-btn:hover {
+  background: linear-gradient(135deg, #1ec6ff, #1ee8bf);
+}
+
+body.premium-gold.aurora-noir .th-btn .icon img,
+body.premium-gold.aurora-noir .th-btn img {
+  filter: brightness(0);
+}
+
+body.premium-gold.aurora-noir .hero-style1,
+body.premium-gold.aurora-noir .service-card,
+body.premium-gold.aurora-noir .integration-card,
+body.premium-gold.aurora-noir .price-box,
+body.premium-gold.aurora-noir .testi-card,
+body.premium-gold.aurora-noir .blog-card,
+body.premium-gold.aurora-noir .case-card,
+body.premium-gold.aurora-noir .counter-card,
+body.premium-gold.aurora-noir .process-item,
+body.premium-gold.aurora-noir .cta-area2 {
+  background: linear-gradient(150deg, rgba(10, 25, 44, 0.92), rgba(10, 31, 39, 0.88));
+  border: 1px solid rgba(111, 196, 227, 0.32);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+}
+
+body.premium-gold.aurora-noir .service-card:hover,
+body.premium-gold.aurora-noir .integration-card:hover,
+body.premium-gold.aurora-noir .price-box:hover,
+body.premium-gold.aurora-noir .testi-card:hover,
+body.premium-gold.aurora-noir .blog-card:hover,
+body.premium-gold.aurora-noir .case-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 26px 48px rgba(0, 0, 0, 0.36);
+}
+
+body.premium-gold.aurora-noir .hero-style1::before {
+  background: linear-gradient(115deg, rgba(5, 16, 36, 0.82), rgba(8, 28, 54, 0.4) 46%, rgba(0, 183, 255, 0.24));
+}
+
+body.premium-gold.aurora-noir .case-content .meta>div {
+  background: rgba(4, 21, 37, 0.72);
+  border: 1px solid rgba(123, 205, 234, 0.25);
+}
+
+body.premium-gold.aurora-noir .case-content .label {
+  color: #95b9ca;
+}
+
+body.premium-gold.aurora-noir .case-content .value,
+body.premium-gold.aurora-noir .case-industry {
+  color: #90e7ff;
+}
+
+body.premium-gold.aurora-noir #testi-sec,
+body.premium-gold.aurora-noir #blog-sec {
+  background: linear-gradient(180deg, rgba(7, 20, 37, 0.82) 0%, rgba(7, 27, 36, 0.94) 100%);
+}
+
+body.premium-gold.aurora-noir .counter-area {
+  border-radius: 24px;
+  border: 1px solid rgba(120, 190, 226, 0.24);
+  padding: 16px;
+  background: linear-gradient(130deg, rgba(5, 14, 28, 0.8), rgba(5, 26, 31, 0.82));
+}
+
+body.premium-gold.aurora-noir .cta-area2::before {
+  background: linear-gradient(90deg, rgba(7, 20, 38, 0.92) 0%, rgba(7, 30, 48, 0.8) 55%, rgba(7, 30, 48, 0.15) 84%);
+}
+
+body.premium-gold.aurora-noir .cta-area2 .sec-title,
+body.premium-gold.aurora-noir .cta-area2 .box-text,
+body.premium-gold.aurora-noir .cta-area2 li {
+  color: #ecf9ff !important;
+}
+
+body.premium-gold.aurora-noir .footer-layout1::before {
+  background: linear-gradient(165deg, rgba(2, 7, 14, 0.96), rgba(4, 15, 30, 0.96));
+}
+
+body.premium-gold.aurora-noir .newsletter-form .form-control {
+  background: rgba(6, 22, 42, 0.58);
+  border-color: rgba(102, 204, 236, 0.6);
+  color: #e6f4ff;
+}
+
+body.premium-gold.aurora-noir .newsletter-form .form-control::placeholder {
+  color: rgba(186, 214, 229, 0.8);
+}
+
+body.premium-gold.aurora-noir .scroll-top {
+  background: #06182a;
+  border-color: #41d7df;
+}
+
+body.premium-gold.aurora-noir .scroll-top svg path {
+  stroke: #41d7df;
+}
+
+body.premium-gold.aurora-noir .hero-style1,
+body.premium-gold.aurora-noir .service-card,
+body.premium-gold.aurora-noir .integration-card,
+body.premium-gold.aurora-noir .price-box,
+body.premium-gold.aurora-noir .testi-card,
+body.premium-gold.aurora-noir .blog-card,
+body.premium-gold.aurora-noir .case-card {
+  animation: auroraFloat 8s ease-in-out infinite;
+}
+
+@keyframes auroraFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 991px) {
+  body.premium-gold.aurora-noir .menu-area {
+    border-radius: 14px;
+  }
+
+  body.premium-gold.aurora-noir .hero-style1,
+  body.premium-gold.aurora-noir .cta-area2,
+  body.premium-gold.aurora-noir .case-card {
+    border-radius: 18px;
+  }
+}
